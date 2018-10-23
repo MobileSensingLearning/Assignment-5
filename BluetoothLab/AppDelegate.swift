@@ -2,21 +2,51 @@
 //  AppDelegate.swift
 //  BluetoothLab
 //
-//  Created by Brandon McFarland on 10/22/18.
+//  Created by Brandon McFarland on 10/19/18.
 //  Copyright © 2018 MobileSensingLearning. All rights reserved.
 //
+
+let kBleConnectNotification = "bleDidConnect"
+let kBleDisconnectNotification = "bleDidDisconnect"
+let kBleReceivedDataNotification = "bleReceievedData"
 
 import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+// ATTENTION
+class AppDelegate: UIResponder, UIApplicationDelegate, BLEDelegate {
+    var bleShield = BLE()
+    
+    // MARK: ====== BLE Delegates Functions ======
+    func bleDidUpdateState() {
 
+    }
+
+    func bleDidConnectToPeripheral() {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: kBleConnectNotification),
+                                        object: self,
+                                        userInfo:["name":self.bleShield.activePeripheral?.name! as Any])
+    }
+
+    func bleDidDisconnectFromPeripheral() {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: kBleDisconnectNotification), object: self)
+    }
+
+    func bleDidReceiveData(data: Data?) {
+        if let dataSafe = data{
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: kBleReceivedDataNotification),
+                                            object: self,
+                                            userInfo:["data":dataSafe])
+        }
+    }
+    
+    // MARK: ====== App Delegate Functions ======
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.bleShield.delegate = self
+        UISwitch.appearance().onTintColor = UIColor(red: 108.0 / 255.0, green: 217.0 / 255.0, blue: 209.0 / 255.0, alpha: 1.0)
         return true
     }
 

@@ -13,6 +13,11 @@
 		20617D67217E8CE5002DC4AB /* BluetoothLab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20617D65217E8CE5002DC4AB /* BluetoothLab.xcdatamodeld */; };
 		20617D69217E8CE7002DC4AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20617D68217E8CE7002DC4AB /* Assets.xcassets */; };
 		20617D6C217E8CE7002DC4AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20617D6A217E8CE7002DC4AB /* LaunchScreen.storyboard */; };
+		20617D74217E8FBC002DC4AB /* ChipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20617D73217E8FBC002DC4AB /* ChipTableViewController.swift */; };
+		20617D76217E9091002DC4AB /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20617D75217E9091002DC4AB /* BLE.swift */; };
+		20617D78217E9549002DC4AB /* SensorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20617D77217E9549002DC4AB /* SensorTableViewController.swift */; };
+		20617D7A217E958D002DC4AB /* LightSensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20617D79217E958D002DC4AB /* LightSensorView.swift */; };
+		20617D7C217E95AA002DC4AB /* ButtonSensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20617D7B217E95AA002DC4AB /* ButtonSensorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		20617D68217E8CE7002DC4AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20617D6B217E8CE7002DC4AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20617D6D217E8CE7002DC4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20617D73217E8FBC002DC4AB /* ChipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipTableViewController.swift; sourceTree = "<group>"; };
+		20617D75217E9091002DC4AB /* BLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
+		20617D77217E9549002DC4AB /* SensorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorTableViewController.swift; sourceTree = "<group>"; };
+		20617D79217E958D002DC4AB /* LightSensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightSensorView.swift; sourceTree = "<group>"; };
+		20617D7B217E95AA002DC4AB /* ButtonSensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSensorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		20617D5D217E8CE5002DC4AB /* BluetoothLab */ = {
 			isa = PBXGroup;
 			children = (
+				20617D75217E9091002DC4AB /* BLE.swift */,
 				20617D5E217E8CE5002DC4AB /* AppDelegate.swift */,
 				20617D60217E8CE5002DC4AB /* ViewController.swift */,
 				20617D62217E8CE5002DC4AB /* Main.storyboard */,
@@ -63,6 +74,10 @@
 				20617D6A217E8CE7002DC4AB /* LaunchScreen.storyboard */,
 				20617D6D217E8CE7002DC4AB /* Info.plist */,
 				20617D65217E8CE5002DC4AB /* BluetoothLab.xcdatamodeld */,
+				20617D73217E8FBC002DC4AB /* ChipTableViewController.swift */,
+				20617D77217E9549002DC4AB /* SensorTableViewController.swift */,
+				20617D79217E958D002DC4AB /* LightSensorView.swift */,
+				20617D7B217E95AA002DC4AB /* ButtonSensorView.swift */,
 			);
 			path = BluetoothLab;
 			sourceTree = "<group>";
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20617D76217E9091002DC4AB /* BLE.swift in Sources */,
 				20617D67217E8CE5002DC4AB /* BluetoothLab.xcdatamodeld in Sources */,
+				20617D7C217E95AA002DC4AB /* ButtonSensorView.swift in Sources */,
 				20617D61217E8CE5002DC4AB /* ViewController.swift in Sources */,
+				20617D78217E9549002DC4AB /* SensorTableViewController.swift in Sources */,
 				20617D5F217E8CE5002DC4AB /* AppDelegate.swift in Sources */,
+				20617D7A217E958D002DC4AB /* LightSensorView.swift in Sources */,
+				20617D74217E8FBC002DC4AB /* ChipTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
