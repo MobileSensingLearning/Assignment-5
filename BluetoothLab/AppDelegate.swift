@@ -14,7 +14,6 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-// ATTENTION
 class AppDelegate: UIResponder, UIApplicationDelegate, BLEDelegate {
     var bleShield = BLE()
     

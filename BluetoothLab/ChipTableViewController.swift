@@ -19,7 +19,17 @@ class ChipTableViewController: UITableViewController {
         let refresh = UIRefreshControl()
         refresh.addTarget(self, action: #selector(scanForDevices), for: .valueChanged)
         self.refreshControl = refresh
+//        createGradientLayer()
     }
+    
+//    func createGradientLayer() {
+//        gradientLayer = CAGradientLayer()
+//        gradientLayer.frame = self.view.bounds
+//        gradientLayer.colors = [ UIColor(red: 35.0 / 255.0, green: 29.0 / 255.0, blue: 79.0 / 255.0, alpha: 1.0).cgColor, UIColor(red: 95.0 / 255.0, green: 88.0 / 255.0, blue: 162.0 / 255.0, alpha: 1.0).cgColor]
+//        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+//        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+//        self.view.layer.insertSublayer(gradientLayer, at: 0)
+//    }
     
     override func prepare(for segue: UIStoryboardSegue!, sender: Any?) {
         var nextViewConteoller = segue.destination as? ViewController
@@ -84,5 +94,4 @@ class ChipTableViewController: UITableViewController {
         //print("global: ", self.globalPeripheralName)
         self.globalPeripheralName = "Brandon's BLE Chip"
     }
-    
 }

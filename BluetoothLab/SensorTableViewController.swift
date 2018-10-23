@@ -20,7 +20,7 @@ class SensorTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // HARD CODEED
+        // ATTENTION
         //return self.bleShield.peripherals.count
         return 1
     }

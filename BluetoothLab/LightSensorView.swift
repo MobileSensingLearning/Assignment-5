@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+var gradientLayer: CAGradientLayer!
+
 class LightSensorView: UIViewController {
+
     
 }
