@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BLEDelegate {
         if let dataSafe = data{
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: kBleReceivedDataNotification),
                                             object: self,
-                                            userInfo:["data":dataSafe])
+                                            userInfo:["data":dataSafe, "name":self.bleShield.activePeripheral?.name! as Any])
         }
     }
     
