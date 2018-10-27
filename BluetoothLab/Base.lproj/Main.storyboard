@@ -203,7 +203,7 @@
                                     <action selector="switchChanged:" destination="y76-3F-OUr" eventType="valueChanged" id="42Z-Dr-que"/>
                                 </connections>
                             </switch>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="128" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="8Fq-ot-beI">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="8Fq-ot-beI">
                                 <rect key="frame" x="118" y="596.5" width="218" height="31"/>
                                 <color key="tintColor" red="0.52549019610000003" green="0.83921568629999999" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
